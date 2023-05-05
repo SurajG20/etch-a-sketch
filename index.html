@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch A Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="title"> <h1>Etch A Sketch</h1></div>
+        <div class="mode">Mode : Coloring</div>
+        <div class="content">
+            <div class="board"> </div>
+            <div class="buttons">
+                <button class="blackbutton" onclick="colorChange('black')">Black</button>
+                <button class="erasorbutton" onclick="colorChange('white')">Erasor</button>
+                <button class="graybutton" onclick="colorChange('gray')">gray</button>
+                <button class="randombutton" onclick="colorChange('random')">Random</button>
+                <button onclick="resetBoard()">Reset</button>
+            </div>
+            <div>
+                <input class="submitSizeInput" type="text" placeholder="size of board" value="16" />
+                <button id="submitSizeButton" >Set Size</button>
+                <div class="error"> The Size must be 2 and 100</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
